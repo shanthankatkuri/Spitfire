@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+#navbar img{
+   height:60px;
+   margin:0px;
+   border-radius:0px 0px 50px 0px;
+}
+#navbar ul{
+    display:flex;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar::before{
+    content:"";
+    background-color:rgba(0,0,0,0.5);
+    position: absolute;
+    height:60px;
+    width:100%;
+    z-index:-1;
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:700px;
+    top:10px;
+}
+#home::before{
+    content:"";
+    background:url(bg.jpeg) no-repeat center center/cover;
+    position: absolute;
+    height:826px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Alkatra', cursive;
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size:1.5rem;
+    font-family: 'Alkatra', cursive;
+}
+.h-primary{
+    font-size:3rem;
+    padding:12px;
+}
+.btn{
+    padding:5px 20px;
+    border:2px solid #8a8a8a;
+    background-color:coral;
+    color:white;
+    font-weight: bold;
+    margin:15px;
+    border-radius:25px;
+    font-size:1.2rem;
+    cursor:pointer;
+}
+.h-secondary{
+    font-size:1.8rem;
+    padding:12px;
+}
+.center{
+    text-align:center;
+}
+#services-container{
+    position:relative;
+    top:50px;
+    background:url('services.jpg') no-repeat center center/cover;
+    margin:10px 0px 0px 0px;
+    opacity:0.7;
+    z-index: -1;
+
+}
+#services-container .h-primary{
+    position:relative;
+    top:10px;
+    font-family: 'Alkatra', cursive;
+}
+#services{
+    margin:0px;
+    display:flex;
+    height:100%;
+    width:100%;
+}
+#services .box{
+    border:2px solid grey;
+    padding:30px;
+    margin:5px;
+    border-radius:25px;
+    background-color: #f2f2f2;
+    background:rgba(255, 255, 255, 0.5)
+}
+#services .box img{
+    height:160px;
+    display:block;
+    margin:auto;
+    border:none;
+    border-radius:20px;
+}
+#services .h-secondary{
+    font-family: 'Alkatra', cursive;
+    font-size:2rem;
+}
+#services .box p{
+    font-family: 'Alkatra', cursive;
+    font-size:1.2rem;
+}
+#aboutus-container{
+    position:relative;
+    top:25px;
+    margin:25px 0px 0px 0px;
+    height:600px;
+    background-color: beige;
+}
+#aboutus-container .h-primary{
+    position:relative;
+    font-family: 'Alkatra', cursive;
+}
+#aboutus{
+    margin:0px;
+    display:flex;
+    height:100%;
+    width:100%;
+    background-color: beige;
+    z-index:-1;
+}
+#aboutus .box{
+    border:2px solid grey;
+    padding:30px;
+    margin:5px;
+    border-radius:25px;
+    background-color: #f2f2f2;
+    background:rgba(255, 255, 255, 0.5);
+}
+#aboutus .box img{
+    height:160px;
+    display:block;
+    margin:auto;
+    border:none;
+    border-radius:20px;
+    width:220px;
+}
+#aboutus .h-secondary{
+    font-family: 'Alkatra', cursive;
+    font-size:2rem;
+}
+#aboutus .box p{
+    font-family: 'Alkatra', cursive;
+    font-size:1.2rem;
+}
+#contact{
+    position:relative;
+    top:130px;
+    width:100%;
+    height:760px;
+    margin:0px 0px 0px 0px;
+}
+#contact .h-primary{
+    font-family: 'Alkatra', cursive;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0.8;
+    background:url('contactus.jpg') no-repeat center center/cover;
+    z-index:-1;
+}
+#call{
+    position:absolute;
+    height:75px;
+    width:75px;
+    border:none;
+    border-radius:50px;
+    left:50px;
+}
+#email{
+    position:absolute;
+    height:70px;
+    width:70px;
+    border:none;
+    border-radius:50px;
+    left:50px;
+    top:300px;
+}
+#whatsapp{
+    position:absolute;
+    height:75px;
+    width:75px;
+    border:none;
+    border-radius:50px;
+    left:50px;
+    top:485px;
+}
+#wapp{
+    font-size:1.3rem;
+    color:white;
+    position:absolute;
+    left:130px;
+    top:510px;
+}
+#phn{
+    font-size:1.3rem;
+    color:white;
+    position:absolute;
+    top:130px;
+    left:130px;
+}
+#mail{
+    font-size:1.3rem;
+    color:white;
+    position:absolute;
+    left:130px;
+    top:320px;
+}
+footer{
+    background-color:rgb(18, 18, 18);
+    color:white;
+    position:relative;
+    top:125px;
+    padding:5px;
+}
+
